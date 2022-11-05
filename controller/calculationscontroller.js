@@ -2,7 +2,7 @@ const { getEnumType } = require("./enum");
 const { calops } = require("./calculationsOperation");
 
 function getcalfunc(req, res) {
-  const slackUsername = "Shehu";
+  const slackUsername = "paulocodes";
   const result = calops(req);
   const operation_type = getEnumType(req.body.operation_type);
   if (!operation_type) {
